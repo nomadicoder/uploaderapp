@@ -5,5 +5,20 @@
   <%= @thing.datafile %>
 </p>
 
+<p>
+  <strong>Datafile URL:</strong>
+  <%= link_to @thing.datafile.url, @thing.datafile.url %>
+</p>
+
+<p>
+  <strong>Datafile Current Path:</strong>
+  <%= @thing.datafile.current_path %>
+</p>
+
+<p>
+  <strong>Datafile Identifier:</strong>
+  <%= @thing.datafile_identifier %>
+</p>
+
 <%= link_to 'Edit', edit_thing_path(@thing) %> |
 <%= link_to 'Back', things_path %>
