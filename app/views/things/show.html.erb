@@ -20,5 +20,10 @@
   <%= @thing.datafile_identifier %>
 </p>
 
+<p>
+  <strong>Datafile Size:</strong>
+  <%= File.size(@thing.datafile.current_path) %>
+</p>
+
 <%= link_to 'Edit', edit_thing_path(@thing) %> |
 <%= link_to 'Back', things_path %>
