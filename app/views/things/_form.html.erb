@@ -13,10 +13,11 @@
 
   <div class="field">
     <%= f.label :datafile %>
-    <%= f.file_field :datafile %>
+    <%= f.file_field :fileupload, multiple: false, name: "thing[datafile]" %>
+    <div id="progress">
+        <div class="bar" style="width: 0%;"></div>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
+

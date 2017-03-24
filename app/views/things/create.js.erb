@@ -1,0 +1,5 @@
+<% if @thing.new_record? %>
+  alert("Failed to upload thing: <%= j @thing.errors.full_messages.join(', ').html_safe %>");
+<% else %>
+  $("#things").append("<%= j render(@thing) %>");
+<% end %>
